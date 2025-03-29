@@ -14,6 +14,9 @@
 
     justify-content: space-around;
     flex-wrap: wrap;
+ display: flex;
+    flex-direction: column;
+    align-items: center;
         }
         .box{
     display: flex;
@@ -22,14 +25,9 @@
     text-align: center;
     padding: 20px 0px 15px;
     margin: 5px;
+    overflow: hidden;
     
     
-}
-.box-img {
-    width: 100%;
-    height: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 .box-content {
     background-color: #fff;
@@ -45,6 +43,12 @@
     flex-wrap: wrap;
     text-align: center;
 }
+.box-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 h3{
     justify-content: space-around;
     flex-wrap: wrap;
@@ -52,13 +56,14 @@ h3{
 }
 
 .header{
-    background: linear-gradient(to bottom right, rgb(37, 95, 187) 50%, rgb(28, 28, 196) 50%);
+    background: linear-gradient(to right, skyblue, blue, blue;
 
     color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+width: 100%;
+    padding: 10px;
 
 }
 
@@ -119,11 +124,17 @@ h3{
     background-color: blue;
 
 }
-.myAadhaar img{
-    padding: 3px 3px 3px 3px;
-}
 i {
     font-size: 2rem;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+img {
+    max-width: 100%;
+    height: auto;
 }
     </style>
 </head>
@@ -152,13 +163,13 @@ i {
                 
         </header>
          <div class="myAadhaar">
-                        <img src="Aadhar-Color.svg" alt="UIDAI Logo" height="20px"><span>myAadhaar</span>
+                        <span>myAadhaar ☑</span>
                         </div>
     <div>
             <div class="box">
                 <div class="box-content" data-name="bags">
                     <img src="https://github.com/user-attachments/assets/7deee50f-7950-48da-85cc-4ba1e7a8c693" alt="image 1">
-<img src="https://github.com/user-attachments/assets/9e007fb1-0f71-4f48-811d-c089ba2b0946" alt="image 2">    
+    <img src="https://github.com/user-attachments/assets/9e007fb1-0f71-4f48-811d-c089ba2b0946" alt="image 1">    
                 </div>    
             </div>
 </body>
